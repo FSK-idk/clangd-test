@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cmake --preset clang-test
-cmake --build --preset clang-test
+cmake --preset clangd-test
+cmake --build --preset clangd-test

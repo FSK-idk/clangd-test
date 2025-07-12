@@ -2,7 +2,7 @@
     "version": 10,
     "configurePresets": [
         {
-            "name": "clang-test",
+            "name": "clangd-test",
             "generator": "Ninja",
             "binaryDir": "${sourceDir}/build",
             "cacheVariables": {
@@ -22,8 +22,8 @@
     ],
     "buildPresets": [
         {
-            "name": "clang-test",
-            "configurePreset": "clang-test"
+            "name": "clangd-test",
+            "configurePreset": "clangd-test"
         }
     ]
 }
