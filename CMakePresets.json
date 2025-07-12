@@ -1,0 +1,29 @@
+{
+    "version": 10,
+    "configurePresets": [
+        {
+            "name": "clang-test",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/bin",
+                "CMAKE_VERBOSE_MAKEFILE": "ON",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "1",
+                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_CXX_STANDARD": "26",
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_CXX_FLAGS": "-O2 -Wall -stdlib=libc++ -std=c++26"
+            },
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "clang-test",
+            "configurePreset": "clang-test"
+        }
+    ]
+}
