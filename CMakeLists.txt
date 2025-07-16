@@ -7,7 +7,7 @@ project(clangd-test LANGUAGES CXX)
 
 add_executable(${PROJECT_NAME})
 
-target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_DIR}/src)
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_26)
 
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
 file(GLOB_RECURSE MODULES CONFIGURE_DEPENDS src/*.cppm)

@@ -1,5 +1,6 @@
 {
     "clangd.arguments": [
-        "--experimental-modules-support"
+        "--experimental-modules-support",
+        "--log=verbose"
     ]
 }
